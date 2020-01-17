@@ -88,7 +88,6 @@ Car.prototype.drive = function (distance) {
     this.tank = 0;
     return "I ran out of fuel at " + this.odometer + " miles!";
   }
-
 };
 
 /*
@@ -108,14 +107,25 @@ function Baby(name, age, favoriteToy) {
 Baby.prototype.play = function() {
   return "Playing with " + this.favoriteToy;
 };
+
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  
+  1. Window/Global Object Binding: 
+		This is binding when in global scope and the value of "this" will be the window/console Object.
+  
+  2. Implicit Binding: 
+		This is binding whenever the preceding dot calls a function, the object is represented by "this".
+  
+  3. New Binding: 
+		This is binding that involves the use "this" refers to an instance of the object that is created and returned
+		by the constructor.
+		
+  4. Explicit Binding:
+		This binding occurs when we use JavaScript's call or apply method. In this case "this" is explicitly defined.
+		
 */
 
 
