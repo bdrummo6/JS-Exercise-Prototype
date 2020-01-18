@@ -82,7 +82,7 @@ Car.prototype.fill = function (gallons) {
 };
 Car.prototype.drive = function (distance) {
   let fuelUsed = distance/this.milesPerGallon;
-  
+
   if(this.tank <= fuelUsed) {
     fuelUsed = this.tank;
     this.tank -= fuelUsed;
