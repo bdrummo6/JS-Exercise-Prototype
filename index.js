@@ -54,7 +54,7 @@ Person.prototype.poop = function () {
   this.stomach.length = 0;
 };
 Person.prototype.toString = function () {
-  return this.name + ", " + this.age;
+  return `${this.name}, ${this.age}`;
 };
 
 /*
@@ -88,7 +88,7 @@ Car.prototype.drive = function (distance) {
     this.tank -= fuelUsed;
     this.tank = 0;
     this.odometer += distance - 1;
-    return "I ran out of fuel at " + this.odometer + " miles!";
+    return `I ran out of fuel at ${this.odometer} miles!`;
   } else {
     this.odometer += distance;
     this.tank -= fuelUsed;
@@ -110,7 +110,7 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy = favoriteToy;
 }
 Baby.prototype.play = function() {
-  return "Playing with " + this.favoriteToy;
+  return `Playing with ${this.favoriteToy}`;
 };
 
 /* 
